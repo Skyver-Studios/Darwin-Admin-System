@@ -1,0 +1,153 @@
+{
+    "name":"Cmdr",
+    "tree":{
+        "$className":"DataModel",
+        "ServerScriptService":{
+            "$className":"ServerScriptService",
+            "CmdrServerConfig":{
+                "$className":"Folder",
+                "$path":"./CmdrServer"
+            },
+            "Cmdr":{
+                "$className":"Folder",
+                "$ignoreUnknownInstances":true,
+                "Server":{
+                    "$className":"Folder",
+                    "$ignoreUnknownInstances":true,
+                    "Cmdr":{
+                        "$path":"./Cmdr"
+                    }
+                },
+                "Commands":{
+                    "$className":"Folder",
+                    "$ignoreUnknownInstances":true,
+                    "$path":"./CmdrCommands"
+                }
+            }
+        },
+        "ServerStorage": {
+            "$className": "ServerStorage",
+            "Tools": {
+                "$className": "Folder"
+            }
+        },
+        "StarterPlayer":{
+            "$className":"StarterPlayer",
+            "StarterPlayerScripts":{
+                "$className":"StarterPlayerScripts",
+                "$path":"./CmdrClient"
+            }
+        },
+        "ReplicatedStorage":{
+            "$className":"ReplicatedStorage",
+            "CmdrReplicated":{
+                "$className":"Folder",
+                "$path":"./CmdrReplicated",
+                "CmdrHooks":{
+                    "$className":"Folder",
+                    "$path":"./CmdrReplicated/CmdrHooks"
+                }
+            }
+        },
+        "StarterGui":{
+            "$className":"StarterGui",
+            "AnnouncementGui":{
+                "$className":"ScreenGui",
+                "$properties":{
+                    "Name":"AnnouncementGui"
+                },
+                "Frame":{
+                    "$className":"Frame",
+                    "$properties":{
+                        "Position":[
+                            0,
+                            0,
+                            -1,
+                            0
+                        ],
+                        "Size":[
+                            1,
+                            0,
+                            0.061,
+                            0
+                        ],
+                        "Style":"DropShadow"
+                    },
+                    "Message":{
+                        "$className":"TextLabel",
+                        "$properties":{
+                            "BackgroundTransparency":1,
+                            "Name":"Message",
+                            "Position":[
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            "Size":[
+                                0.986,
+                                0,
+                                1,
+                                0
+                            ],
+                            "TextColor3":[
+                                1,
+                                1,
+                                1
+                            ],
+                            "TextSize":20
+                        }
+                    }
+                }
+            },
+            "CountdownGui":{
+                "$className":"ScreenGui",
+                "$properties":{
+                    "Name":"CountdownGui"
+                },
+                "Frame":{
+                    "$className":"Frame",
+                    "$properties":{
+                        "Position":[
+                            0,
+                            0,
+                            1.816,
+                            0
+                        ],
+                        "Size":[
+                            0.115,
+                            0,
+                            0.184,
+                            0
+                        ],
+                        "Style":"DropShadow"
+                    },
+                    "title": {
+                        "$className": "TextLabel",
+                        "$properties": {
+                            "AnchorPoint": [0.5, 0],
+                            "BackgroundTransparency": 1,
+                            "Name": "title",
+                            "Position": [0.5, 0, 0, 0],
+                            "Size": [0.833, 0, 0.333, 0],
+                            "Text": "Countdown",
+                            "TextSize": 15
+                        }
+                    },
+                    "cd": {
+                        "$className": "TextLabel",
+                        "$properties": {
+                            "AnchorPoint": [0.5, 0.5],
+                            "BackgroundTransparency": 1,
+                            "Name": "cd",
+                            "Position": [0.5, 0, 0.5, 0],
+                            "Size": [0.9, 0, 0.9, 0],
+                            "Text": "0",
+                            "TextSize": 50
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
