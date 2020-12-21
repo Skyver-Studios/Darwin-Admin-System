@@ -9,7 +9,7 @@ return {
 			Name = "players";
 			Description = "The player(s) to give a tool.";
 		}, {
-			Type = "tools";
+			Type = "string";
 			Name = "tool";
 			Description = "The tool to give. (Must be the full name.)";
 		},
